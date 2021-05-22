@@ -1,0 +1,72 @@
+.cardComponent {
+	height: calc(45vh - 45px);
+	margin: 3px 3px 20px 3px;
+	position: relative;
+}
+
+.blurredImage {
+	filter: blur(3px);
+}
+
+.image {
+	height: 100%;
+}
+
+.bluredBackground {
+	height: 100%;
+    bottom: calc(45vh - 42px);
+    position: inherit;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	color: #faf3f3;
+}
+
+.bluredBackground:hover {
+	background-color: rgb(0 0 0 / 38%);
+	transition: all 0.25s;
+    font-size: 24px;
+}
+
+.moreInformationCard {
+	padding: 20px 30px 30px 30px;
+    line-height: 30px;
+    max-height: 80vh;
+}
+
+.moreInformationContent {
+    overflow: hidden;
+    overflow-y: scroll;
+	max-height: 65vh;
+}
+
+.cardHeader {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.closeButton {
+	background-color: inherit;
+    border: none;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+	
+::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+	border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+	background: #888; 
+	border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}
